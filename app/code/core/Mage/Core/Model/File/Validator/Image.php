@@ -101,6 +101,7 @@ class Mage_Core_Model_File_Validator_Image
                     $imageWidth = imagesx($image);
                     $imageHeight = imagesy($image);
                 }
+
                 $img = imagecreatetruecolor($imageWidth, $imageHeight);
                 imagealphablending($img, false);
                 imagecopyresampled($img, $image, 0, 0, 0, 0, $imageWidth, $imageHeight, $imageWidth, $imageHeight);

@@ -3512,16 +3512,6 @@ $ignoreErrors[] = [
     'path' => __DIR__ . '/../app/code/core/Mage/Core/Model/File/Validator/Image.php',
 ];
 $ignoreErrors[] = [
-    'rawMessage' => 'Parameter #1 $width of function imagecreatetruecolor expects int<1, max>, int<0, max> given.',
-    'count' => 1,
-    'path' => __DIR__ . '/../app/code/core/Mage/Core/Model/File/Validator/Image.php',
-];
-$ignoreErrors[] = [
-    'rawMessage' => 'Parameter #2 $height of function imagecreatetruecolor expects int<1, max>, int<0, max> given.',
-    'count' => 1,
-    'path' => __DIR__ . '/../app/code/core/Mage/Core/Model/File/Validator/Image.php',
-];
-$ignoreErrors[] = [
     'rawMessage' => 'Parameter #1 $callback of function call_user_func_array expects callable(): mixed, array{Mage_Core_Helper_Abstract, mixed} given.',
     'count' => 1,
     'path' => __DIR__ . '/../app/code/core/Mage/Core/Model/Input/Filter.php',
