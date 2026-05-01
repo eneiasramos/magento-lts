@@ -97,7 +97,7 @@ class Mage_Core_Model_File_Validator_Image
                  * PHP 8.2.0: Now returns the actual image dimensions, bits and channels of AVIF images;
                  * previously, the dimensions were reported as 0x0, and bits and channels were not reported at all.
                  */
-                if ($imageWidth === 0 || $imageHeight === 0) {
+                if (($imageWidth === 0 || $imageHeight === 0) && PHP_VERSION_ID < 80200) {
                     $imageWidth = imagesx($image);
                     $imageHeight = imagesy($image);
                 }
